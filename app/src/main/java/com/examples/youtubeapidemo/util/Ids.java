@@ -13,40 +13,40 @@ import java.util.List;
 public abstract class Ids {
 
     public static class ActionBarDemoActivity {
-        public static final String VIDEO_ID = "9c6W4CCU9M4";
+        public static final String VIDEO_ID = "-xNN-bJQ4vI";
     }
 
     public static class FragmentDemoActivity {
-        public static final String VIDEO_ID = "nCgQDjiotG0";
+        public static final String VIDEO_ID = "-xNN-bJQ4vI";
     }
 
     public static class FullscreenDemoActivity {
-        public static final String VIDEO_ID = "avP5d16wEp0";
+        public static final String VIDEO_ID = "-xNN-bJQ4vI";
     }
 
     public static class IntentsDemoActivity {
-        public static final String VIDEO_ID = "-Uwjt32NvVA";
-        public static final String PLAYLIST_ID = "PLF3DFB800F05F551A";
+        public static final String VIDEO_ID = "-xNN-bJQ4vI";
+        public static final String PLAYLIST_ID = "PLQMAjqIRdQxiFDvW1FrghrbFG26nSP0JG";
         public static final String USER_ID = "Google";
-        public static final String CHANNEL_ID = "UCVHFbqXqoYvEWM1Ddxl0QDg";
+        public static final String CHANNEL_ID = "UCzuqhhs6NWbgTzMuM09WKDQ";
     }
 
     public static class PlayerControlsDemoActivity {
         public static final ListEntry[] ENTRIES = {
-                new ListEntry("Androidify App", "irH3OSOskcE", false),
-                new ListEntry("Chrome Speed Tests", "nCgQDjiotG0", false),
-                new ListEntry("Playlist: Google I/O 2012", "PL56D792A831D0C362", true)};
+                new ListEntry("Montanha Russa", "-xNN-bJQ4vI", false),
+                new ListEntry("The Walking Dead", "nRQsn_qd2Vs", false),
+                new ListEntry("360 VR Playlist", "PLQMAjqIRdQxiFDvW1FrghrbFG26nSP0JG", true)};
     }
 
     public static class PlayerViewDemoActivity {
-        public static final String VIDEO_ID = "wKJ9KzGQq0w";
+        public static final String VIDEO_ID = "-xNN-bJQ4vI";
     }
 
     public static class StandalonePlayerDemoActivity {
-        public static final String VIDEO_ID = "cdgQpa1pUUE";
-        public static final String PLAYLIST_ID = "7E952A67F31C58A3";
+        public static final String VIDEO_ID = "EFslfVDzyG0";
+        public static final String PLAYLIST_ID = "PLQMAjqIRdQxiFDvW1FrghrbFG26nSP0JG";
         public static final ArrayList<String> VIDEO_IDS = new ArrayList<>(
-                Arrays.asList(new String[]{"cdgQpa1pUUE", "8aCYZ3gXfy8", "zMabEyrtPRg"})
+                Arrays.asList(new String[]{"p3VJAgcrSIA", "vjxd3TxQ-s0", "5GSICpwRStY"})
         );
     }
 
@@ -55,18 +55,18 @@ public abstract class Ids {
 
         static {
             List<VideoEntry> list = new ArrayList<>();
-            list.add(new VideoEntry("YouTube Collection", "Y_UmWdcTrrc"));
-            list.add(new VideoEntry("GMail Tap", "1KhZKNZO8mQ"));
-            list.add(new VideoEntry("Chrome Multitask", "UiLSiqyDf4Y"));
-            list.add(new VideoEntry("Google Fiber", "re0VRK6ouwI"));
-            list.add(new VideoEntry("Autocompleter", "blB_X38YSxQ"));
-            list.add(new VideoEntry("GMail Motion", "Bu927_ul_X0"));
-            list.add(new VideoEntry("Translate for Animals", "3I24bSteJpw"));
+            list.add(new VideoEntry("Roller Coasters Orlando and Tampa", "p3VJAgcrSIA"));
+            list.add(new VideoEntry("Stratos (Space)", "vjxd3TxQ-s0"));
+            list.add(new VideoEntry("The Amazing Spider-Man 2", "5GSICpwRStY"));
+            list.add(new VideoEntry("Mega Coaster 360 VR", "-xNN-bJQ4vI"));
+            list.add(new VideoEntry("3D F-18 Fighter", "EFslfVDzyG0"));
+            list.add(new VideoEntry("Shark 360", "rG4jSz_2HDY"));
+            list.add(new VideoEntry("JURASSIC PARK VR", "PntXvz5omik"));
             VIDEO_LIST = Collections.unmodifiableList(list);
         }
     }
 
     public static class VideoWallDemoActivity {
-        public static final String PLAYLIST_ID = "wKJ9KzGQq0w";
+        public static final String PLAYLIST_ID = "PLQMAjqIRdQxiFDvW1FrghrbFG26nSP0JG";
     }
 }
