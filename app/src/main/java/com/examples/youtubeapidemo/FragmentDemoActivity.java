@@ -18,6 +18,7 @@ package com.examples.youtubeapidemo;
 
 import android.os.Bundle;
 
+import com.examples.youtubeapidemo.util.Ids;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerFragment;
@@ -32,28 +33,28 @@ import com.google.android.youtube.player.YouTubePlayerFragment;
  */
 public class FragmentDemoActivity extends YouTubeFailureRecoveryActivity {
 
-  @Override
-  public void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-    setContentView(R.layout.fragments_demo);
+        setContentView(R.layout.fragments_demo);
 
-    YouTubePlayerFragment youTubePlayerFragment =
-        (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youtube_fragment);
-    youTubePlayerFragment.initialize(DeveloperKey.DEVELOPER_KEY, this);
-  }
-
-  @Override
-  public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player,
-      boolean wasRestored) {
-    if (!wasRestored) {
-      player.cueVideo("nCgQDjiotG0");
+        YouTubePlayerFragment youTubePlayerFragment =
+                (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youtube_fragment);
+        youTubePlayerFragment.initialize(DeveloperKey.DEVELOPER_KEY, this);
     }
-  }
 
-  @Override
-  protected YouTubePlayer.Provider getYouTubePlayerProvider() {
-    return (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youtube_fragment);
-  }
+    @Override
+    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player,
+                                        boolean wasRestored) {
+        if (!wasRestored) {
+            player.cueVideo(Ids.FragmentDemoActivity.VIDEO_ID);
+        }
+    }
+
+    @Override
+    protected YouTubePlayer.Provider getYouTubePlayerProvider() {
+        return (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youtube_fragment);
+    }
 
 }
